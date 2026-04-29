@@ -21,9 +21,12 @@
     <main>
       <section>
         <h2>Contáctenos</h2>
-        <p>¿Tienes dudas o sugerencias? Completa el formulario.</p>
+        <p>
+          ¿Tienes dudas o sugerencias? Completa el formulario y te respondemos
+          pronto.
+        </p>
 
-        <form action="#" method="post">
+        <form>
           <article>
             <label for="nombre">Nombre completo:</label>
             <input
@@ -31,7 +34,6 @@
               id="nombre"
               name="nombre"
               placeholder="Ej: Juan Perez Quintero"
-              required
             />
           </article>
 
@@ -47,44 +49,29 @@
           </article>
 
           <article>
-            <label for="trabajo1">¿De qué trabajas?</label>
-            <input
-              type="radio"
-              id="trabajo1"
-              name="trabajo"
-              value="profesional"
-            />
+            <label for="rol1">¿Cuál es tu rol?</label>
+            <input type="radio" id="rol1" name="rol" value="estudiante" />
+            Estudiante
+            <input type="radio" id="rol2" name="rol" value="profesional" />
             Programador profesional
-            <input type="radio" id="trabajo2" name="trabajo" value="hobbie" />
-            Programador por hobbie
-            <input type="radio" id="trabajo3" name="trabajo" value="ambas" />
-            Ambas
+            <input type="radio" id="rol3" name="rol" value="docente" /> Docente
           </article>
 
           <article>
-            <label for="check1"
-              >¿Qué te llama la atención de la programación?</label
-            >
-            <input type="checkbox" id="check1" name="interes" value="crear" />
-            Crear cosas nuevas
-            <input
-              type="checkbox"
-              id="check2"
-              name="interes"
-              value="resolver"
-            />
-            Resolver problemas
-            <input type="checkbox" id="check3" name="interes" value="dinero" />
-            Ganar dinero
+            <label for="check1">¿Qué temas te interesan?</label>
+            <input type="checkbox" id="check1" name="interes" value="ia" />
+            Inteligencia Artificial
+            <input type="checkbox" id="check2" name="interes" value="git" /> Git
+            y GitHub
+            <input type="checkbox" id="check3" name="interes" value="agil" />
+            Metodologías ágiles
             <input
               type="checkbox"
               id="check4"
               name="interes"
-              value="aprender"
+              value="frontend"
             />
-            Aprender cosas nuevas
-            <input type="checkbox" id="check5" name="interes" value="otras" />
-            Otras
+            Desarrollo Frontend
           </article>
 
           <article>
@@ -122,7 +109,7 @@
       <p>Estudiante: <strong>Alejandro Quintero Agudelo</strong></p>
       <p>Año: <strong>2026</strong></p>
       <p>Curso: <strong>Introducción a la programación - Martes</strong></p>
-      <p>“Proyecto académico sin frameworks – 2026 Momento 2”</p>
+      <p>Proyecto académico sin frameworks – 2026 Momento 2</p>
     </footer>
   </body>
 </html>
