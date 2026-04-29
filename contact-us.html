@@ -1,34 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contáctenos – DevAlejo</title>
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contáctenos – DevAlejo</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DevAlejo – Sistema de Encuestas</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="survey.html">Encuesta</a></li>
+          <li><a href="contact-us.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <h1>DevAlejo – Sistema de Encuestas</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="survey.html">Encuesta</a></li>
-        <li><a href="contact-us.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <section>
+        <h2>Contáctenos</h2>
+        <p>¿Tienes dudas o sugerencias? Completa el formulario.</p>
 
-  <main>
-    <section>
-    </section>
-  </main>
+        <form action="#" method="post">
+          <article>
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Juan Perez Quintero"
+              required
+            />
+          </article>
 
-  <footer>
-    <p>Estudiante: <strong>Alejandro Quintero Agudelo</strong></p>
-    <p>Año: <strong>2026</strong></p>
-    <p>Curso: <strong>Introducción a la programación - Martes</strong></p>
-    <p>Proyecto académico sin frameworks – 2026 Momento 2</p>
-  </footer>
-</body>
+          <article>
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tucorreo@ejemplo.com"
+              required
+            />
+          </article>
+
+          <article>
+            <label for="trabajo1">¿De qué trabajas?</label>
+            <input
+              type="radio"
+              id="trabajo1"
+              name="trabajo"
+              value="profesional"
+            />
+            Programador profesional
+            <input type="radio" id="trabajo2" name="trabajo" value="hobbie" />
+            Programador por hobbie
+            <input type="radio" id="trabajo3" name="trabajo" value="ambas" />
+            Ambas
+          </article>
+
+          <article>
+            <label for="check1"
+              >¿Qué te llama la atención de la programación?</label
+            >
+            <input type="checkbox" id="check1" name="interes" value="crear" />
+            Crear cosas nuevas
+            <input
+              type="checkbox"
+              id="check2"
+              name="interes"
+              value="resolver"
+            />
+            Resolver problemas
+            <input type="checkbox" id="check3" name="interes" value="dinero" />
+            Ganar dinero
+            <input
+              type="checkbox"
+              id="check4"
+              name="interes"
+              value="aprender"
+            />
+            Aprender cosas nuevas
+            <input type="checkbox" id="check5" name="interes" value="otras" />
+            Otras
+          </article>
+
+          <article>
+            <label for="motivo">Motivo de contacto</label>
+            <select id="motivo" name="motivo">
+              <option value="" disabled selected>
+                Selecciona un motivo...
+              </option>
+              <option value="dudas">Dudas sobre las encuestas</option>
+              <option value="sugerencias">
+                Sugerencias para nuevas encuestas
+              </option>
+              <option value="colaborar">Colaborar en el proyecto</option>
+              <option value="otros">Otros</option>
+            </select>
+          </article>
+
+          <article>
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </article>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Estudiante: <strong>Alejandro Quintero Agudelo</strong></p>
+      <p>Año: <strong>2026</strong></p>
+      <p>Curso: <strong>Introducción a la programación - Martes</strong></p>
+      <p>“Proyecto académico sin frameworks – 2026 Momento 2”</p>
+    </footer>
+  </body>
 </html>
