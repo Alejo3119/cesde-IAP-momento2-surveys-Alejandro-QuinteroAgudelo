@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="generator" content="handcoded"> 
     <title>Encuesta – DevAlejo</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -20,6 +20,91 @@
     </header>
 
     <main>
+      <section>
+        <h2>Encuesta: Uso de la IA para programar</h2>
+        <p>
+          Responde estas preguntas sobre cómo utilizas la Inteligencia
+          Artificial en tu día a día como programador.
+        </p>
+
+        <form>
+          <article>
+            <label for="rev1"
+              >¿Revisas y entiendes el código que te genera la IA antes de
+              usarlo?</label
+            >
+            <input
+              type="radio"
+              id="rev1"
+              name="revision"
+              value="siempre"
+              required
+            />
+            Sí, siempre lo reviso línea por línea
+            <input type="radio" id="rev2" name="revision" value="aveces" /> Sí,
+            pero solo cuando tengo tiempo
+            <input type="radio" id="rev3" name="revision" value="poco" /> A
+            veces, depende de qué tan complejo sea
+            <input type="radio" id="rev4" name="revision" value="nunca" />
+            Nunca
+          </article>
+
+          <article>
+            <label for="ia1">¿Cuál es tu IA preferida para programar?</label>
+            <input
+              type="radio"
+              id="ia1"
+              name="herramienta"
+              value="claude"
+              required
+            />
+            Claude
+            <input type="radio" id="ia2" name="herramienta" value="chatgpt" />
+            ChatGPT
+            <input type="radio" id="ia3" name="herramienta" value="gemini" />
+            Gemini
+            <input type="radio" id="ia4" name="herramienta" value="ninguna" />
+            No uso ninguna
+          </article>
+
+          <article>
+            <label for="hab1"
+              >¿Crees que un programador que usa IA es menos hábil que uno que
+              no la usa?</label
+            >
+            <input
+              type="radio"
+              id="hab1"
+              name="habil"
+              value="si"
+              required
+            />
+            Sí, depender de la IA reduce las habilidades
+            <input type="radio" id="hab2" name="habil"/> No,
+            usar IA es una habilidad en sí misma
+            <input type="radio" id="hab3" name="habil"/> Si
+            es muy dependiente de la IA, sí
+          </article>
+
+          <article>
+            <label for="futu1"
+              >¿Crees que la IA reemplazará a los programadores en los próximos
+              10 años?</label
+            >
+            <input type="radio" id="futu1" name="fut"/>
+            Sí, completamente
+            <input type="radio" id="futu2" name="fut"/> No, los
+            programadores siempre serán necesarios
+            <input type="radio" id="futu3" name="fut"/> No en
+            10 años, pero sí en más tiempo
+            <input type="radio" id="futu4" name="fut"/> Antes
+            de los 10 años
+          </article>
+          <!-- id="":Conecta el label con el input -->
+        </form> 
+          <button type="submit">Enviar encuesta</button>
+        </form>
+      </section>
     </main>
 
     <footer>
